@@ -1,5 +1,8 @@
 <script setup lang="ts">
-import {RouterLink, RouterView} from 'vue-router'
+import { RouterLink, RouterView } from 'vue-router'
+import  LoveTalk  from './components/LoveTalk.vue'
+import Count from '@/components/Count.vue'
+import FA from '@/components/FA.vue'
 </script>
 
 <template>
@@ -9,13 +12,16 @@ import {RouterLink, RouterView} from 'vue-router'
     <div class="navigate">
       <router-link to="/home">首页</router-link>
       <router-link to="/news">新闻</router-link>
-      <router-link to="/about">新闻</router-link>
+      <router-link to="/about">关于</router-link>
     </div>
     <!--  展示区-->
     <div class="main-content">
       <RouterView></RouterView>
     </div>
   </div>
+  <LoveTalk />
+  <Count />
+  <FA />
 </template>
 
 <style scoped>
@@ -52,7 +58,7 @@ import {RouterLink, RouterView} from 'vue-router'
 }
 
 .navigate a.active {
-  background-color: #64967E;
+  background-color: #64967e;
   color: #ffc268;
   font-weight: 900;
   text-shadow: 0 0 1px black;
