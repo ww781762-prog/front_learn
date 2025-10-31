@@ -18,4 +18,12 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
+    //scss全局变量一个配置
+    css: {
+        preprocessorOptions: {
+            scss: {
+                additionalData: '@use "@/styles/variable.scss";',
+            },
+        },
+    },
 })

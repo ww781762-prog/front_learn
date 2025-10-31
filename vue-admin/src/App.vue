@@ -4,6 +4,7 @@ import HelloWorld from '@/components/HelloWorld.vue'
 
 <template>
   <HelloWorld/>
+  <svg-icon name="phone" color="green"></svg-icon>
 </template>
 
 <style scoped>
