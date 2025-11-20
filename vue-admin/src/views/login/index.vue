@@ -4,13 +4,13 @@
 <!--  xs 屏幕小于多少的直线-->
   <el-col :span="12" :xs="0"></el-col>
   <el-col :span="12" :xs="24">
-    <el-form class="login_form">
+    <el-form ref="loginForms" :model="loginForm" :rules="rules" class="login_form">
       <h1>Hello</h1>
       <h2>欢迎来到硅谷真源</h2>
-      <el-form-item>
+      <el-form-item prop='username'>
         <el-input :prefix-icon="User" v-model="loginForm.username"></el-input>
       </el-form-item>
-      <el-form-item>
+      <el-form-item prop='password'>
         <el-input type="password" :prefix-icon="Lock" v-model="loginForm.password" show-password></el-input>
       </el-form-item>
       <el-form-item>
@@ -29,33 +29,61 @@ import {reactive,ref} from 'vue'
 import useUserStore from "@/store/modules/user.ts";
 import { useRouter } from 'vue-router';
 import {ElNotification} from "element-plus";
+import {getTime} from "@/utils/time.ts";
 let loginForm= reactive({
  username: '',
  password: ''
 })
 
 let loading = ref(false);
-
 let useStore= useUserStore()
 let $router = useRouter()
+let loginForms = ref()
 const login = async ()=>{
   loading.value = true
   try{
+    await loginForms.value.validate()
     await  useStore.userLogin(loginForm)
     $router.push("/");
     ElNotification({
-          type: "success",
-      message:"登陆成功"
-        }
-    )
+      type: "success",
+      message:"登陆成功",
+      title:"HI," + getTime()
+    })
     loading.value = false
   }catch(error){
     loading.value = false
-    ElNotification({
-      type: 'error',
-      message:(error as Error).message,
-    })
+    if (error instanceof Error){
+      ElNotification({
+        type: 'error',
+        message: (error as Error).message,
+      })
+    }
   }
+}
+const validatorUserName=(_rule:any,value:any,callback:any)=>{
+  if (value.length>=5){
+    callback()
+  }else {
+    callback(new Error("账户密码至少五位"))
+  }
+}
+const validatorPassword=(_rule:any,value:any,callback:any)=>{
+  if(value.length>=6){
+    callback()
+  }else {
+    callback(new Error("密码至少六位"))
+  }
+}
+const  rules={
+  username:[
+    // { required: true, min: 6, max: 10, message: '账号长度至少六位', trigger: 'change' }
+    { trigger: 'change', validator: validatorUserName },
+  ],
+  password:[
+    // { required: true, min: 6, max: 15, message: '密码长度至少6位', trigger: 'change' }
+    { trigger: 'change', validator: validatorPassword },
+  ]
 }
 
 </script>

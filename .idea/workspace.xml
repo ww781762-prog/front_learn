@@ -4,27 +4,21 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b5bdfe3-411f-4972-87d3-68b63fa2e9c6" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/vue-admin/mock/user.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-admin/src/api/user/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-admin/src/api/user/type.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-admin/src/router/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-admin/src/router/routers.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-admin/src/store/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-admin/src/store/modules/types/type.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-admin/src/store/modules/user.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-admin/src/utils/request.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-admin/src/views/404/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-admin/src/views/home/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-admin/src/views/login/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/index.html" afterDir="false" />
+    <list default="true" id="1b5bdfe3-411f-4972-87d3-68b63fa2e9c6" name="更改" comment="开始">
+      <change afterPath="$PROJECT_DIR$/vue-admin/public/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-admin/src/layout/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-admin/src/layout/logo/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-admin/src/setting.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-admin/src/utils/time.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-admin/src/utils/token.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello-vue3/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/hello-vue3/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-admin/eslint.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/eslint.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vue-admin/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vue-admin/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-admin/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-admin/src/components/HelloWorld.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-admin/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-admin/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/tsconfig.app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-admin/tsconfig.node.json" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/tsconfig.node.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-admin/src/router/routers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/src/router/routers.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-admin/src/store/modules/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/src/store/modules/user.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-admin/src/views/login/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/src/views/login/index.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vue-admin/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/vite.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,13 +47,16 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/ww781762-prog/front_learn.git&quot;,
-    &quot;accountId&quot;: &quot;ac6772fe-48f4-4492-9bec-95995756097a&quot;
+    &quot;accountId&quot;: &quot;4e28fd0b-4922-42e5-bec5-35c888aeb8d6&quot;
   }
 }</component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -68,31 +65,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.GoLinterPluginOnboarding&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.GoLinterPluginStorageMigration&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/wallace&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/wallace/GolandProjects/front_learn/vue-admin/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.GoLinterPluginOnboarding": "true",
+    "RunOnceActivity.GoLinterPluginStorageMigration": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "git-widget-placeholder": "main",
+    "go.import.settings.migrated": "true",
+    "go.sdk.automatically.set": "true",
+    "last_opened_file_path": "/Users/wallace",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/Users/wallace/GolandProjects/front_learn/hello-vue3/node_modules/prettier",
+    "ts.external.directory.path": "/Users/wallace/GolandProjects/front_learn/hello-vue3/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;vue.recent.templates&quot;: [
-      &quot;Vue Composition API Component&quot;
+  "keyToStringList": {
+    "vue.recent.templates": [
+      "Vue Composition API Component"
     ]
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/vue-admin/public" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -124,6 +127,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="开始" />
+    <option name="LAST_COMMIT_MESSAGE" value="开始" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
