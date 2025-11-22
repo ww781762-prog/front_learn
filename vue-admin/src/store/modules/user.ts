@@ -2,11 +2,14 @@ import {defineStore} from "pinia";
 import type {loginFormData, loginResponseData} from "@/api/user/type.ts";
 import {reqLogin} from "@/api/user";
 import {GET_TOKEN, SET_TOKEN} from "@/utils/token.ts";
+import {constantRouter} from '@/router/routers'
+import type {UserState} from "@/store/modules/types/type.ts";
 
 let  useUserStore = defineStore("User",{
-     state:()=>{
+     state:():UserState=>{
         return {
             token: GET_TOKEN("TOKEN"),
+            menuRoutes: constantRouter // 菜单
         }
      },
     actions:{

@@ -7,7 +7,7 @@ export default{
 }
 </script>
 <template>
-<div class="logo">
+<div class="logo" v-if="setting.logoHidden">
   <img :src="setting.logo">
 
   <p>{{setting.title}}</p>
@@ -21,7 +21,8 @@ export default{
   color: white;
   display: flex;
   align-items: center;
-  padding: 10px;
+  padding: 20px;
+  box-sizing: border-box;
   img{
     width: 40px;
     height: 40px;

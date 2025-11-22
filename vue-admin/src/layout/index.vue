@@ -1,6 +1,15 @@
 <script setup lang="ts">
-
+import {useRoute} from 'vue-router'
 import Logo from "@/layout/logo/index.vue";
+import Menu from "@/layout/menu/index.vue";
+import Main from "@/layout/main/index.vue"
+import Tabber from "@/layout/tabbar/index.vue"
+import userUserStore from '@/store/modules/user'
+
+let $route = useRoute()
+
+
+let userStore = userUserStore()
 </script>
 
 <template>
@@ -8,10 +17,20 @@ import Logo from "@/layout/logo/index.vue";
   <div class="layout_container">
     <div class="layout_slider">
       <Logo></Logo>
+      <!--       滚动菜单条-->
+      <el-scrollbar class="scrollbar" >
+      <!--<p v-for="item in 200" :key="item" class="scrollbar-demo-item">{{ item }}</p>-->
+        <el-menu  :default-active="$route.path" background-color="#001529" text-color="white" >
+          <Menu :menuList="userStore.menuRoutes"></Menu>
+        </el-menu>
+      </el-scrollbar>
     </div>
-    <div class="layout_tabbar">456</div>
-    <div class="layout_main">789
-      <p style="height: 100000px;background-color: red"></p>
+    <!--顶部导航-->
+    <div class="layout_tabbar">
+      <Tabber></Tabber>
+    </div>
+    <div class="layout_main">
+      <Main></Main>
     </div>
   </div>
 
@@ -26,9 +45,16 @@ import Logo from "@/layout/logo/index.vue";
     width: variable.$base-menu-width;
     height: 100vh;
     background-color: variable.$base-menu-background;
+    .scrollbar {
+      width: 100%;
+      height: calc(100vh - variable.$base-menu-logo-height);
+      .el-menu{
+        border-right: none;
+      }
+    }
   }
   .layout_tabbar{
-    position: fixed;
+    position: absolute;
     width: calc(100% - variable.$base-menu-width);
     height: variable.$base-tabbar-height;
     top: 0px;
@@ -42,7 +68,9 @@ import Logo from "@/layout/logo/index.vue";
     left: variable.$base-menu-width;
     top: variable.$base-tabbar-height;
     background-color: aqua;
+    padding: 20px;
     overflow: auto;
+    box-sizing: border-box;
   }
 }
 </style>
