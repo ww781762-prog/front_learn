@@ -6,6 +6,7 @@ import "virtual:svg-icons-register"
 import  globalComponents  from '@/components'
 import router from '@/router/index.ts'
 import pinia from "@/store";
+import './permisstion'
 
 const app = createApp(App)
 globalComponents.install(app)

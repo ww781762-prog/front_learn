@@ -4,26 +4,33 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b5bdfe3-411f-4972-87d3-68b63fa2e9c6" name="更改" comment="开始">
-      <change afterPath="$PROJECT_DIR$/vue-admin/src/layout/main/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-admin/src/layout/menu/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-admin/src/layout/tabbar/breadcrumb/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-admin/src/layout/tabbar/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-admin/src/layout/tabbar/setting/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-admin/src/views/acl/permission/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-admin/src/views/acl/role/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-admin/src/views/acl/user/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-admin/src/views/product/attr/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-admin/src/views/product/sku/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-admin/src/views/product/spu/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-admin/src/views/product/trademark/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-admin/src/views/screen/index.vue" afterDir="false" />
+    <list default="true" id="1b5bdfe3-411f-4972-87d3-68b63fa2e9c6" name="更改" comment="导航和菜单">
+      <change afterPath="$PROJECT_DIR$/vue-admin/.env.development" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-admin/.env.production" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-admin/.env.test" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-admin/src/assets/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-admin/src/permisstion.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-admin/src/store/modules/setting.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-admin/src/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/src/components/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-admin/mock/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/mock/user.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-admin/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-admin/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-admin/src/api/user/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/src/api/user/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-admin/src/api/user/type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/src/api/user/type.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vue-admin/src/layout/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/src/layout/index.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vue-admin/src/layout/logo/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/src/layout/logo/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-admin/src/layout/main/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/src/layout/main/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-admin/src/layout/tabbar/breadcrumb/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/src/layout/tabbar/breadcrumb/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-admin/src/layout/tabbar/setting/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/src/layout/tabbar/setting/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-admin/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/src/main.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vue-admin/src/router/routers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/src/router/routers.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vue-admin/src/store/modules/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/src/store/modules/user.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-admin/src/styles/variable.scss" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/src/styles/variable.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-admin/src/utils/request.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/src/utils/request.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-admin/src/utils/token.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/src/utils/token.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-admin/src/views/home/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/src/views/home/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-admin/src/views/login/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/src/views/login/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-admin/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/vite.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,8 +40,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="Vue Composition API Component" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -81,7 +88,7 @@
     "git-widget-placeholder": "main",
     "go.import.settings.migrated": "true",
     "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "/Users/wallace",
+    "last_opened_file_path": "/Users/wallace/GolandProjects/front_learn/vue-admin",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
@@ -96,6 +103,10 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/vue-admin" />
+      <recent name="$PROJECT_DIR$/vue-admin/src/assets/images" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/vue-admin/src/views/acl" />
       <recent name="$PROJECT_DIR$/vue-admin/public" />
@@ -147,7 +158,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="开始" />
-    <option name="LAST_COMMIT_MESSAGE" value="开始" />
+    <MESSAGE value="导航和菜单" />
+    <option name="LAST_COMMIT_MESSAGE" value="导航和菜单" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
